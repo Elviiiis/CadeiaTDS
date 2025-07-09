@@ -12,18 +12,18 @@ function atualizarTabela() {
     const passouTempo = horaAtual >= item.horaFinal;
     const tr = document.createElement("tr");
 
-    tr.innerHTML = `
-      <td>${item.nome}</td>
-      <td>${item.turma}</td>
-      <td>${item.entrada}</td>
-      <td>${item.horaFinal}</td>
-      <td>${item.tipo}</td>
-<td>
-  ${passouTempo ? `<button onclick="liberar(${index})">Liberar</button>` : '-'}
-  <button onclick="removerCadastro(${index})">Remover</button>
-</td>
+tr.innerHTML = `
+  <td>${item.nome}</td>
+  <td>${item.turma}</td>
+  <td>${item.entrada}</td>
+  <td>${item.horaFinal}</td>
+  <td>${item.tipo}</td>
+  <td>
+    <button class="btn-liberar" onclick="liberar(${index})">Liberar</button>
+    <button onclick="removerCadastro(${index})">Remover</button>
+  </td>
+`;
 
-    `;
 
     tabela.appendChild(tr);
   });
