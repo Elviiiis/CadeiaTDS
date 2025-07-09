@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Presos Liberados</title>
+  <link rel="stylesheet" href="liberados.css">
+
+</head>
+<body>
+  <header>
+    <h1>Presos Liberados</h1>
+    <nav>
+      <a href="home.html">Cadastro</a>
+      <a href="presos.html">Presos Atuais</a>
+      <a href="index.html">Tela De Login</a>
+    </nav>
+  </header>
+<div class="filter">
+  <h3>Filtrar por Turma</h3>
+  <select id="filtroTurma"></select>
+  <button class="btn" id="btnFiltrar">Filtrar</button>
+  <button class="btn" id="btnMostrarTodos">Mostrar Todos</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Turma</th>
+      <th>Horário Inicial</th>
+      <th>Horário Final</th>
+      <th>Tipo</th>
+    </tr>
+  </thead>
+  <tbody id="tabelaLiberados"></tbody>
+</table>
+
+<button id="btnLimpar">Apagar Local Storage</button>
+
+<script src="liberados.js"></script>
+    <footer>
+        <p>2025</p>
+        <p>3° ANO TECNICO NO DESENVOLVIMENTO DE SISTEMAS</p>
+        <p>COLÉGIO ESTADUAL ERON DOMINGUES</p>
+    </footer>
+</body>
+</html>

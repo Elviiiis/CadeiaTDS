@@ -1,0 +1,136 @@
+/* Reset básico */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+header {
+  background: linear-gradient(135deg, #49079b, #7b1fa2);
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 12px rgba(75, 0, 130, 0.6);
+  color: #f3e5f5;
+  font-family: 'Roboto Slab', serif;
+}
+
+header h1 {
+  margin: 0 0 15px 0;
+  font-weight: 700;
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 6px rgba(75, 0, 130, 0.8);
+}
+
+/* Navegação */
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+header nav a {
+  color: #f3e5f5;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 18px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header nav a:hover,
+header nav a:focus {
+  background-color: rgba(243, 229, 245, 0.3);
+  color: #4a148c;
+  outline: none;
+  box-shadow: 0 4px 10px rgba(75, 0, 130, 0.6);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estrutura geral */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Título */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+/* Formulário */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+label {
+  font-weight: 500;
+  margin-top: 10px;
+  display: block;
+  margin-bottom: 4px;
+  color: #34495e;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.btn {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #1a242f;
+}
+footer {
+  position: fixed;
+  font-weight: bold;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1a0033; /* roxo bem escuro */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-family: sans-serif;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
