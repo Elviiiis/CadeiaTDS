@@ -19,9 +19,9 @@ function atualizarTabela() {
       <td>${item.horaFinal}</td>
       <td>${item.tipo}</td>
       <td>
-        <button onclick="liberar(${index})">Liberar</button>`
-        <button onclick="removerCadastro(${index})">Remover</button>
-      </td>
+  <button onclick="liberar(${index})">Liberar</button>` 
+  <button onclick="removerCadastro(${index})">Remover</button>
+</td>
     `;
     tabela.appendChild(tr);
   });
