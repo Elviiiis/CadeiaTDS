@@ -19,7 +19,7 @@ function atualizarTabela() {
       <td>${item.horaFinal}</td>
       <td>${item.tipo}</td>
       <td>
-        ${passouTempo ? `<button onclick="liberar(${index})">Liberar</button>` : '-'}
+        <button onclick="liberar(${index})">Liberar</button>`
         <button onclick="removerCadastro(${index})">Remover</button>
       </td>
     `;
