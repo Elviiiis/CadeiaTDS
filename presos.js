@@ -28,6 +28,7 @@ function atualizarTabela() {
   });
 }
 
+
 function liberar(index) {
   cadastros[index].liberado = true;
   cadastros[index].liberadoHora = new Date().toLocaleTimeString();
